@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/itemPage.css">
+    <link rel="stylesheet" type="text/css" href="styles/itemCard.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+<header class="header-wrapper">
+    <div class="menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu-list">
+            <li class="menu-list-item">Каталог</li>
+            <li class="menu-list-item">Колекції</li>
+            <li class="menu-list-item">Покупцям</li>
+            <li class="menu-list-item">Про нас</li>
+        </ul>
+    </div>
+
+    <img alt="logo" src="assets/icons/logo.svg" class="logo"/>
+
+    <div class="manage-language">
+        <p class="language-title">UA/ENG</p>
+        <div class="language-dropdown">
+            <button class="language-dropdown-btn">
+                <span>UAH</span>
+                <img alt="arrow" src="assets/icons/arrow.svg" class="arrow" />
+            </button>
+            <div class="dropdown-content">
+                <span>UAH</span>
+                <span>ENG</span>
+            </div>
+        </div>
+    </div>
+
+    <ul class="manage-buttons">
+        <li class="manage-buttons-item">
+            <button class="manage-buttons-item-btn">
+                <img alt="search" src="assets/icons/search.svg">
+            </button>
+        </li>
+        <li class="manage-buttons-item">
+            <button class="manage-buttons-item-btn">
+                <img alt="account" src="assets/icons/account.svg">
+            </button>
+        </li>
+        <li class="manage-buttons-item">
+            <button class="manage-buttons-item-btn">
+                <img alt="like" src="assets/icons/like.svg">
+            </button>
+        </li>
+        <li class="manage-buttons-item">
+            <button class="manage-buttons-item-btn">
+                <img alt="shopping" src="assets/icons/shopping.svg">
+            </button>
+        </li>
+    </ul>
+</header>
+
+<main class="main-item-wrapper">
+    <div class="item-general">
+        <div class="item-general-image">
+            <img alt="photo" src="assets/images/itemPhoto1.jpg"/>
+            <img alt="photo" src="assets/images/itemPhoto2.jpg"/>
+            <img alt="photo" src="assets/images/itemPhoto3.jpg"/>
+            <img alt="photo" src="assets/images/itemPhoto4.jpg"/>
+        </div>
+
+        <div class="item-general-info">
+            <div class="item-general-info-title">
+                <h1 class="title-text">Кардиган в смужку Sailor</h1>
+                <div>
+                    <p class="title-name">Артикул:</p>
+                    <span class="title-article-value">9874937</span>
+                </div>
+            </div>
+
+            <div class="item-general-info-price">
+                <p class="title-name">Ціна:</p>
+                <p class="price-value">2 985 грн.</p>
+                <span class="title-name">2 985 грн.</span>
+            </div>
+
+            <div class="item-general-sizes">
+                <div>
+                    <p class="title-name">Розмір:</p>
+                    <span class="size-tag active">xs</span>
+                    <span class="size-tag">s</span>
+                    <span class="size-tag">m</span>
+                    <span class="size-tag">l</span>
+                </div>
+
+                <div class="sizes-colors">
+                    <p class="title-name">Колір:</p>
+                    <div class="colors">
+                        <img alt="ellipseDark" src="assets/icons/ellipseDark.svg"/>
+                        <img alt="ellipseWhite" src="assets/icons/ellipseWhite.svg"/>
+                        <img alt="ellipseNude" src="assets/icons/ellipseNude.svg"/>
+                        <img alt="ellipseLate" src="assets/icons/ellipseLate.svg"/>
+                    </div>
+                    <p class="title-name">білий</p>
+                </div>
+            </div>
+
+            <div class="item-general-buttons">
+                <button class="add-button">
+                    додати до кошика
+                </button>
+                <button class="like-button">
+                    додати в обране
+                    <img alt="like" src="assets/icons/like.svg"/>
+                </button>
+
+            </div>
+
+            <div class="item-general-info-details">
+                <div class="details-buttons">
+                    <button class="details-button active">Таблиця розмірів</button>
+                    <button class="details-button">Опис</button>
+                    <button class="details-button">Склад і догляд</button>
+                    <button class="details-button">Характеристики</button>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">Розмір/Параметри</div>
+                    <div class="table-header">Груди</div>
+                    <div class="table-header">Талія</div>
+                    <div class="table-header">Стегна</div>
+
+                    <div class="table-cell">XS</div>
+                    <div class="table-cell">82-85</div>
+                    <div class="table-cell">60-67</div>
+                    <div class="table-cell">90-94</div>
+
+                    <div class="table-cell">XS-S</div>
+                    <div class="table-cell">82-89</div>
+                    <div class="table-cell">60-72</div>
+                    <div class="table-cell">90-98</div>
+
+                    <div class="table-cell">S</div>
+                    <div class="table-cell">86-89</div>
+                    <div class="table-cell">68-72</div>
+                    <div class="table-cell">95-98</div>
+
+                    <div class="table-cell">M</div>
+                    <div class="table-cell">90-93</div>
+                    <div class="table-cell">73-77</div>
+                    <div class="table-cell">99-102</div>
+
+                    <div class="table-cell">M-L</div>
+                    <div class="table-cell">90-97</div>
+                    <div class="table-cell">73-82</div>
+                    <div class="table-cell">99-106</div>
+
+                    <div class="table-cell">L</div>
+                    <div class="table-cell">94-97</div>
+                    <div class="table-cell">78-82</div>
+                    <div class="table-cell">103-106</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-additional">
+        <div class="item-additional-content">
+            <h1 class="item-additional-content-title">Вам може сподобатись</h1>
+            <ul class="item-additional-content-list">
+                <li class="cloth-item active">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth4.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+
+                <li class="cloth-item">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth1.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+
+                <li class="cloth-item">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth3.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+
+                <li class="cloth-item">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth4.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="item-additional-content">
+            <h1 class="item-additional-content-title">Ви раніше переглядали</h1>
+            <ul class="item-additional-content-list">
+                <li class="cloth-item active">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth4.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+
+                <li class="cloth-item">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth1.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+
+                <li class="cloth-item">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth3.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+
+                <li class="cloth-item">
+                    <div class="cloth-img">
+                        <img alt="cloth" src="assets/images/cloth4.jpg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                            <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cloth-sizes">
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">xs</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseBlack.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">s</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGray.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">m</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseRed.svg">
+                        </div>
+                        <div class="cloth-sizes-item">
+                            <span class="cloth-sizes-item-text">l</span>
+                            <img alt="ellipseBlack" src="assets/icons/ellipseGreen.svg">
+                        </div>
+                    </div>
+                    <div class="cloth-info">
+                        <p class="cloth-info-name">Кардиган в смужку Sailor</p>
+                        <p class="cloth-info-price">2 985 грн.</p>
+                        <button class="cloth-info-btn">докладніше</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer class="footer-wrapper">
+    <div>
+        <div class="main-container">
+            <section class="info-section">
+                <img alt="logo" src="assets/icons/logo.svg"/>
+
+                <img alt="pay" src="assets/icons/pay.svg"/>
+
+                <div class="rights">
+                    <div class="mkey-logo">
+                        <p class="rights-text">Розроблено компанією</p>
+                        <img alt="mkeyLogo" src="assets/icons/mkeyLogo.svg"/>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section">
+                <div class="info-section-list-container">
+                    <p class="footer-title">Ми в соціальних мережах</p>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">Instagram</li>
+                        <li class="footer-list-item">Facebook</li>
+                        <li class="footer-list-item">Telegram</li>
+                    </ul>
+                </div>
+
+                <div class="rights">
+                    <p class="rights-text">©2023 Всі права захищені. Інтернет магазин J.D.Wool.</p>
+                </div>
+            </section>
+            <section class="info-section">
+                <div class="info-section-list-container">
+                    <p class="footer-title">Інформація для клієнта</p>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">Про нас</li>
+                        <li class="footer-list-item">Контакти</li>
+                        <li class="footer-list-item">Доставка і оплата</li>
+                        <li class="footer-list-item">Обмін і поверння</li>
+                        <li class="footer-list-item">Договір оферти</li>
+                        <li class="footer-list-item">Політика конфіденційності</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="bottom-rights">
+        <div class="mkey-logo">
+            <p class="rights-text">Розроблено компанією</p>
+            <img alt="mkeyLogo" src="assets/icons/mkeyLogo.svg"/>
+        </div>
+        <p class="rights-text">©2023 Всі права захищені. Інтернет магазин J.D.Wool.</p>
+    </div>
+</footer>
+</body>
+</html>

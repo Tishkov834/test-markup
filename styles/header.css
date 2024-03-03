@@ -1,0 +1,370 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat, Arial sans-serif;
+    overflow-x: hidden;
+}
+
+.header-wrapper {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu-toggle {
+    opacity: 0;
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+
+.menu-btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menu-list {
+    visibility: visible;
+}
+
+#menu-toggle:checked ~ .menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    transition-duration: .20s;
+}
+
+.menu-list {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu-list-item {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-list-item:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: block;
+}
+
+.manage-language {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.language-title {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.language-dropdown-btn {
+    background-color: inherit;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    font-family: Montserrat, Arial sans-serif;
+    cursor: pointer;
+    padding: 0;
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.dropdown-content span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content span:hover {
+    background: gray;
+}
+
+.arrow {
+    font-size: 10px;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.language-dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.manage-buttons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.manage-buttons-item-btn {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu-list {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        z-index: 2;
+    }
+
+    .menu-list-item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .menu-list-item:hover {
+        background-color: #CFD8DC;
+        text-decoration: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu-list {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        z-index: 2;
+    }
+
+    .menu-list-item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .menu-list-item:hover {
+        background-color: #CFD8DC;
+        text-decoration: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .manage-buttons-item-btn > img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .language-title {
+        display: none;
+    }
+
+    .language-dropdown-btn {
+        font-size: 15px;
+    }
+
+    .arrow {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .manage-buttons {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu-list {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        z-index: 2;
+    }
+
+    .menu-list-item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .menu-list-item:hover {
+        background-color: #CFD8DC;
+        text-decoration: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .manage-buttons-item-btn > img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .language-title {
+        display: none;
+    }
+
+    .language-dropdown-btn {
+        font-size: 12px;
+    }
+
+    .arrow {
+        font-size: 5px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .manage-buttons {
+        gap: 5px;
+    }
+}

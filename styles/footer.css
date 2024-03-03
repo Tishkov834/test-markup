@@ -1,0 +1,245 @@
+.footer-wrapper {
+    width: 100%;
+    border-top: 1px solid rgb(201, 201, 201);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 120px;
+    background-image: url('../assets/images/footerLogo.png');
+    background-size: cover;
+    background-position: bottom;
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-container {
+    width: 1200px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-section {
+    margin: 85px 0 46px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.info-section-list-container {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-title {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer-list-item {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.footer-list-item:hover {
+    text-decoration: underline;
+}
+
+.rights-text {
+    color: rgb(152, 152, 152);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0;
+}
+
+.bottom-rights {
+    display: none;
+}
+
+.mkey-logo {
+    display: flex;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1340px) {
+    .main-container {
+        width: 1000px;
+    }
+
+    .footer-wrapper::before {
+        max-width: 1000px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-container {
+        width: 720px;
+        justify-content: space-between;
+    }
+
+    .footer-wrapper::before {
+        max-width: 720px;
+        height: 100px;
+    }
+
+    .rights {
+        display: none;
+    }
+
+    .bottom-rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-section {
+        justify-content: start;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .main-container {
+        width: 300px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-wrapper::before {
+        max-width: 300px;
+        height: 80px;
+    }
+
+    .rights {
+        display: none;
+    }
+
+    .bottom-rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-section {
+        justify-content: start;
+        gap: 30px;
+        margin: 30px 0;
+    }
+
+    .info-section-list-container {
+        align-items: center;
+    }
+
+    .footer-list {
+        align-items: center;
+    }
+
+    .rights-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-container {
+        width: 300px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-wrapper::before {
+        max-width: 300px;
+        height: 80px;
+    }
+
+    .rights {
+        display: none;
+    }
+
+    .bottom-rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-section {
+        justify-content: start;
+        gap: 30px;
+        margin: 30px 0;
+    }
+
+    .info-section-list-container {
+        align-items: center;
+    }
+
+    .footer-list {
+        align-items: center;
+    }
+
+    .rights-text {
+        text-align: center;
+    }
+}

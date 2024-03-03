@@ -1,0 +1,119 @@
+.cloth-img {
+    width: 285px;
+    height: 444px;
+    position: relative;
+}
+
+.like-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.cloth-info-name {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.cloth-info-price {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.cloth-info-btn {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0;
+    text-align: left;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cloth-info-btn:hover  {
+    color: #007bff;
+}
+
+.cloth-item {
+    margin: 20px 0 68px 0;
+}
+
+.cloth-item.active svg {
+    fill: #f9f9f9;
+}
+
+.cloth-item svg:hover {
+    fill: #f9f9f9;
+}
+
+.cloth-item.active .cloth-img {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cloth-item.active .cloth-info {
+    display: none;
+}
+
+.cloth-sizes {
+    display: none;
+    margin-top: 24px;
+    gap: 30px;
+}
+
+.cloth-sizes-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.cloth-sizes-item-text {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.cloth-item.active .cloth-sizes {
+    display: flex;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cloth-item {
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .cloth-item {
+        margin: 20px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cloth-item {
+        margin: 15px 0 20px 0;
+    }
+}
